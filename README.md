@@ -1,6 +1,18 @@
+![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
+![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![GitHub](https://img.shields.io/badge/GitHub-Repo-black)
+
+
 # Jenkins CI/CD Pipeline with Docker and GitHub
 
-This repository demonstrates a Jenkins pipeline implementation for achieving **Continuous Integration and Continuous Deployment (CI/CD)** using **Docker** and **GitHub**.
+## 🎯 Project Objective
+
+To build a fully automated CI/CD pipeline using Jenkins, Docker, and GitHub that:
+- Builds application automatically
+- Deploys using Docker containers
+- Updates application on every GitHub push
+- Runs on AWS EC2 instance
 
 ---
 
@@ -27,13 +39,74 @@ Before setting up the pipeline, ensure that you have the following:
 ---
 
 ## Project Pipeline Flowchart
+## 🧱 System Architecture
 
 The CI/CD pipeline workflow is illustrated below:
-
+Developer → GitHub → Jenkins → Docker → EC2 Deployment
 ![Jenkins CI/CD Pipeline with Docker and GitHub](architecture-diagram.png)
 
 
 ---
+
+
+## 🚀 Features
+
+- Automated CI/CD pipeline
+- Docker-based deployment
+- GitHub webhook integration
+- Auto deployment on every push
+- EC2 hosted application
+
+
+
+## ⚙️ How It Works
+
+1. Developer pushes code to GitHub  
+2. GitHub triggers Jenkins via webhook  
+3. Jenkins pulls latest code  
+4. Docker image is built  
+5. Container is created or updated  
+6. Application is deployed on EC2
+
+
+## 🛠️ Technology Stack
+
+- GitHub (Source Code Management)
+- Jenkins (CI/CD Automation)
+- Docker (Containerization)
+- AWS EC2 (Deployment Server)
+- Git (Version Control)
+
+
+## ⚠️ Limitations
+
+- No automated testing stage
+- No advanced deployment strategy (blue-green/rolling)
+- Basic security configuration
+
+
+
+## 🚀 Future Improvements
+
+- Add CI testing stage (JUnit / Selenium)
+- Implement Kubernetes deployment
+- Add monitoring (Prometheus + Grafana)
+- Convert freestyle job to Jenkinsfile pipeline
+
+
+
+
+## 🎯 Final Outcome
+
+This project demonstrates:
+
+- End-to-end CI/CD automation
+- Docker containerized deployment
+- AWS EC2 hosting
+- Real-world DevOps workflow
+- Industry-level pipeline implementation
+
+
 
 ## Installation Instructions
 
